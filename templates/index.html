@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Rubik's Cube Timer</title>
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<meta charset="UTF-8">
+		<title>Stopwatch</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="description" content="A super simple Rubik's Cube Scrambler written in JavaScript by Jonathan Robson.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body onload="show();">
+		
+		<div id="main">
+		<div id="scramble"></div>
+		<button id="btn-refresh">SCRAMBLE</button>
+		</div>
+		
+		<div id="timedisplay">Time: <span id="time"></span></div>
+		<div id="instuctions">Press start to start timing and any letter to stop.<br>Reset to clear your time.</br></div>
+		<input class="timers" type="button" value="start/stop" onclick="start()"; onkeypress="stop();">
+		<input class="timers" type="button" value="reset" onclick="reset()";>
+		
+		<div> 
+		<textarea id="countedtimes">Your times here</textarea>
+		</div>
+
+	</body>
+	
+	<script src="/static/js/java.js"></script>
+</html>
